@@ -1,5 +1,6 @@
 package application;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -9,7 +10,10 @@ import java.util.ResourceBundle;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.Button;
@@ -119,7 +123,16 @@ public class ListViewController extends LeaseRightController implements Initiali
 	
 	@FXML
 	public void handleSearchClick() {
-		
+		try {
+			Stage secondaryStage = new Stage();
+			
+			Parent root = FXMLLoader.load(getClass().getResource("SearchView.fxml"));
+			
+			Scene scene = new Scene(root,325,375);
+			secondaryStage.setScene(scene);
+			secondaryStage.show();
+		} catch (IOException e) {	
+		}
 	}
 	
 	@FXML

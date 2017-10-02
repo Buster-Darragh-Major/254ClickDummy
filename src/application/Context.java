@@ -11,6 +11,8 @@ public class Context {
 		return instance;
 	}
 	
+	
+	
 	public void setUpdate(boolean bool) {
 		_update = bool;
 	}
@@ -18,6 +20,8 @@ public class Context {
 	public boolean isUpdate() {
 		return _update;
 	}
+	
+	
 	
 	public void setView(String view) {
 		_view = view;

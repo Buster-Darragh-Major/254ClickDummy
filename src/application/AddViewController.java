@@ -51,6 +51,7 @@ public class AddViewController extends LeaseRightController implements Initializ
 	@FXML
 	public void handleBackClick() {
 		Context.getInstance().setUpdate(false);
+		Context.getInstance().setUpdate(false);
 		Stage stage = (Stage) _backButton.getScene().getWindow(); // Get current stage
 		changeWindow("ListView.fxml", stage); // Change to ListView.fxml view
 	}
@@ -70,6 +71,7 @@ public class AddViewController extends LeaseRightController implements Initializ
 		Optional<ButtonType> result = deletePopup.showAndWait();
 		
 		if (result.get() == buttonTypeDelete) {
+			Context.getInstance().setUpdate(false);
 			Context.getInstance().setUpdate(false);
 			Stage stage = (Stage) _submitButton.getScene().getWindow(); // Get current stage
 			changeWindow("ListView.fxml", stage); // Change to ListView.fxml view
