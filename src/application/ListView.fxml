@@ -9,10 +9,10 @@
    <children>
       <ListView fx:id="_listView" layoutX="200.0" layoutY="100.0" prefHeight="278.0" prefWidth="580.0" AnchorPane.bottomAnchor="62.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="60.0" />
       <Button fx:id="_searchButton" layoutX="490.0" layoutY="27.0" mnemonicParsing="false" onAction="#handleSearchClick" prefHeight="20.0" prefWidth="100.0" text="Search" />
-      <Button fx:id="_addButton" layoutX="490.0" layoutY="346.0" mnemonicParsing="false" onAction="#handleAddClick" prefHeight="40.0" prefWidth="100.0" text="Add" />
+      <Button fx:id="_addButton" layoutX="490.0" layoutY="346.0" mnemonicParsing="false" onAction="#handleAddClick" prefHeight="40.0" prefWidth="100.0" text="Add" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="10.0" />
       <Button fx:id="_updateButton" layoutX="381.0" layoutY="346.0" mnemonicParsing="false" onAction="#handleUpdateClick" prefHeight="40.0" prefWidth="100.0" text="Update" />
       <Button fx:id="_deleteButton" layoutX="10.0" layoutY="346.0" mnemonicParsing="false" onAction="#handleDeleteClick" prefHeight="40.0" prefWidth="100.0" text="Delete" />
-      <Button fx:id="_mainMenuButton" layoutX="11.0" layoutY="11.0" mnemonicParsing="false" onAction="#handleMainMenuClick" prefHeight="40.0" prefWidth="100.0" text="Main Menu" />
-      <Label fx:id="_listLabel" alignment="CENTER" layoutX="279.0" layoutY="31.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+      <Button fx:id="_mainMenuButton" layoutX="11.0" layoutY="11.0" mnemonicParsing="false" onAction="#handleMainMenuClick" prefHeight="40.0" prefWidth="100.0" text="Main Menu" AnchorPane.leftAnchor="11.0" AnchorPane.topAnchor="11.0" />
+      <Label fx:id="_listLabel" alignment="CENTER" layoutX="279.0" layoutY="31.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="31.0" />
    </children>
 </AnchorPane>
